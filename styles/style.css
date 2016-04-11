@@ -1,0 +1,234 @@
+/* Portfolido Color Pallete  */
+/* https://coolors.co/b1740f-ffd07b-fdb833-296eb4-1789fc */
+
+* {
+	margin: 0; 
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none; 
+	color: inherit;
+}
+a:visited {
+	color: inherit; 
+}
+.mainContainer {
+	width: 300px;
+	height: 400px;
+	background: white;
+	border: 1px solid rgb(88,176,236);
+	box-shadow: 5px 5px 15px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	text-align: center;
+	transition: 1s all ease;
+/*	-webkit-transform: translateX(-50%);*/
+/*	transform-style: preserve-3d;*/
+}
+.mainImageContainer {
+	width: 200px;
+	height: 200px;
+	background: gray;
+	border-radius: 50%;
+	margin: 7% auto;
+	border: 1px solid black;
+	overflow: hidden;
+}
+
+.profilePicture {
+	width: 100%;
+	height: 100%;
+}
+.projectName {
+	color: rgb(88,176,236);
+	font-size: 18px;
+	margin: 3%;
+}
+.projectSummary {
+	color: #d9d9d9;
+	font-size: 14px;
+	margin: 3%;
+}
+.links {
+	border: 1px solid rgb(88,176,236);
+	border-radius: 50px;
+	padding: 2% 10%;
+	color: gray;
+	background: transparent;
+	margin: 3%;
+	box-shadow: 3px 3px 5px;
+	font-size: 1em;
+}
+.links:hover {
+	cursor: pointer;
+}
+
+.iconLink {
+	width: 10%;
+	-webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+	margin: auto 5%;
+}
+.iconLink:hover {
+	cursor: pointer;
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
+}
+.navArrowsContainer {
+	margin: auto;
+}
+.navigationArrow {
+	width: 10%;
+	margin: auto 15%;
+}
+.navigationArrow:hover {
+	cursor: pointer;
+}
+/*Second Project View*/
+.secondContainer {
+	width: 300px;
+	height: 400px;
+	background: #889099;
+	border: 1px solid rgb(88,176,236);
+	box-shadow: 5px 5px 15px;
+	margin: 10% auto;
+	text-align: center;
+	transition: .5s transform ease;
+	transform-style: preserve-3d;
+}
+
+/*Project Detail View*/
+.projectImagesContainer {
+	width: 50%;
+	height: 100vh;
+	display: inline-block;
+	top: 0;
+    position: absolute;
+    background: rgb(41,110,180);
+    overflow: hidden;
+/*     background-image: url("../images/CafeAppPresentation.JPG");
+    background-position: 100%; */
+}
+.projectImage {
+	width: 100%;
+	height: 100vh;
+}
+.projectDetailsContainer {
+	width: 50%;
+	height: 100vh;
+	display: inline-block;
+	text-align: center;
+	padding: 1%;
+	top: 0;
+	left: 50%;
+    position: absolute;
+    background: rgb(41,110,180);
+}
+.projectDescription {
+	font-size: 2em;
+	margin: 10% auto;
+	color: white;
+}
+.overview {
+	font-size: 3em;
+	margin: 10% auto;
+	color: white;
+}
+.projectDetailOverview {
+	font-size: 1em;
+	margin: 10% auto;
+	color: white;
+	width: 80%;
+}
+.arrow {
+	width: 5%;
+	height: 5%;
+	margin: 0 15%;
+}
+.homeArrowContainer {
+	width: 12%;
+	height: 12%;
+	margin: 0 44%;
+	position: absolute;
+    top: 92%;
+}
+.homeArrow {
+	width: 100%;
+}
+
+/* Side Menu Path */
+.sidePathContainer {
+	width: .1em;
+	height: 63vh;
+	background: white;
+	position: absolute;
+	top: 20%;
+	right: 5%;
+}
+
+.sideMenuItem {
+  	margin-bottom: 4400%;
+    margin-top: -1000%;
+    margin-left: -375%;
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+}
+.sideMenuItem:hover {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+}
+.currentViewContainer {
+	width: 10em;
+	background: white;
+	text-align: center;
+	border-radius: 10px;
+	position: absolute;
+	top: -2%;
+	right: 1500%;
+	padding: 5px;
+	transition: 1s all ease;
+}
+.currentView {
+	font-size: 1em;
+	color: gray;
+}
+.triangleSelector {
+	width: 0;
+	height: 0;
+	border-top: .75em solid transparent;
+	border-bottom: .75em solid transparent;
+	border-left: .75em solid white;
+	position: absolute;
+	top: -1.5px;
+	right: -7.5%;
+	margin: 2%;
+}
+.emailContainer {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+    top: 110%;
+    right: -25px;
+}
+.emailContainer img {
+	width: 100%;
+    border: .5px solid white;
+    border-radius: 100%;
+    padding: 20%;
+}
+
+/* About me page */
+.aboutMeContainer {
+	color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+.aboutMeContainer > * {
+	margin: 2% auto;
+}
+.aboutMeContainer > h1 {
+	font-size: 2em;
+}
