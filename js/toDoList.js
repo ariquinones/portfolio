@@ -34,14 +34,16 @@ function openToDoList () {
 										'<h2 class="overview">Overview</h2>' +
 										'<h3 class="projectDetailOverview">A helpful and easy to use to do list application for \
 										your daily use.</h3>' +
-										 '<a href="http://ariquinones.github.io/yourToDos/" target="_blank"><p>Your To Dos List</p></a>' +
+										 '<a  href="http://ariquinones.github.io/yourToDos/" target="_blank"><span id="goto">Go to: </span><p class="githubProject">Your To Dos List</p></a>' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
 		projectImagesContainer.style.backgroundImage = "url('./images/toDoListIpadsView.png')"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
-										'<h2 class="overview">Designs</h2>' +
+										'<h2 class="overview">Concept</h2>' +
+										'<h3 class="projectDetailOverview">Using React and Backbone for JSX components this list allows a user to add\
+										list items and toggle between what has been done and not done.</h3>' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
 		document.querySelector('.buttonRight').addEventListener('click', page3)
 		document.querySelector('.buttonLeft').addEventListener('click', openToDoList)
@@ -50,6 +52,7 @@ function openToDoList () {
 		projectImagesContainer.style.backgroundImage = "url('./images/toDoListIphoneView.png')"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
+										'<h3 class="projectDetailOverview">Simple UI design with the user in mind for the best possible experience.</h3>' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
 		document.querySelector('.buttonRight').addEventListener('click', page4)
 		document.querySelector('.buttonLeft').addEventListener('click', page2)

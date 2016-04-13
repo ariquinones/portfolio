@@ -138,7 +138,7 @@ function changeToBloggingLargeView () {
 }
 
 function openAboutMe () {
-	console.log("toDoList")
+	console.log("about me")
 		function backHome () {
 			mainContainer.style.top = "20%"
 			projectImagesContainer.style.width = "50%"							

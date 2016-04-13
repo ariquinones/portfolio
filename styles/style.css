@@ -4,7 +4,9 @@
 * {
 	margin: 0; 
 	box-sizing: border-box;
+	font-family: 'Poiret One';
 }
+
 a {
 	text-decoration: none; 
 	color: inherit;
@@ -84,6 +86,17 @@ a:visited {
 	cursor: pointer;
 }
 /*Second Project View*/
+.githubProject {
+	font-size: 1em;
+	margin: 1% auto;
+	color: white;
+	font-style: italic;
+	font-weight: bold; 
+}
+#goto {
+	color: white;
+}
+
 .secondContainer {
 	width: 300px;
 	height: 400px;
@@ -212,12 +225,16 @@ a:visited {
 	position: absolute;
     top: 110%;
     right: -25px;
+    opacity: .7;
 }
 .emailContainer img {
 	width: 100%;
     border: .5px solid white;
     border-radius: 100%;
     padding: 20%;
+}
+.emailContainer:hover {
+	opacity: 1;
 }
 
 /* About me page */
