@@ -163,7 +163,7 @@ function openAboutMe () {
 		document.querySelector(".sidePathContainer").style.display = "initial"
 		}
 	document.querySelector(".sidePathContainer").style.display = "none"
-	mainContainer.style.top = "-52%"
+	mainContainer.style.top = "-48%"
 	mainContainer.innerHTML = '<div class="homeArrowContainer">\
 									<img class="homeArrow" src="images/arrow-bottom.svg">\
 								</div>'
