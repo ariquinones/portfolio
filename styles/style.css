@@ -333,8 +333,8 @@ a:visited {
 		background: rgb(41,110,180);
 	}
 	.mainContainer {
-	width: 50%;
-    height: 40%;
+	width: 60%;
+    height: 50%;
 	background: white;
 	border: 1px solid rgb(88,176,236);
 	box-shadow: 5px 5px 15px;
@@ -347,8 +347,8 @@ a:visited {
 /*	transform-style: preserve-3d;*/
 	}
 	.mainImageContainer {
-		width: 55%;
-		height: 50%;
+		width: 50%;
+		height: 40%;
 	}
 	.projectName {
 		font-size: 2.5em;
