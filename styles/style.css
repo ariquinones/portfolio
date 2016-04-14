@@ -215,8 +215,8 @@ a:visited {
 	border-bottom: .75em solid transparent;
 	border-left: .75em solid white;
 	position: absolute;
-	top: -1.5px;
-	right: -7.5%;
+	top: -0.5px;
+    right: -5.5%;
 	margin: 2%;
 }
 .emailContainer {
