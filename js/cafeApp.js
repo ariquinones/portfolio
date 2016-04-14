@@ -22,7 +22,11 @@ function openBloggingLargeProject () {
 	document.querySelector(".sidePathContainer").style.display = "initial"
 	}
 	document.querySelector(".sidePathContainer").style.display = "none"
-	mainContainer.style.top = "-48%"
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ 		mainContainer.style.top = "-35%"
+	} else {
+		mainContainer.style.top = "-48%"
+	}
 	mainContainer.innerHTML = '<div class="homeArrowContainer">\
 									<img class="homeArrow" src="images/arrow-bottom.svg">\
 								</div>'

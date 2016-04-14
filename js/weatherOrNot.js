@@ -22,7 +22,11 @@ function openWeatherOrNot () {
 	document.querySelector(".sidePathContainer").style.display = "initial"
 	}
 	document.querySelector(".sidePathContainer").style.display = "none"
-	mainContainer.style.top = "-48%"
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ 		mainContainer.style.top = "-35%"
+	} else {
+		mainContainer.style.top = "-48%"
+	}
 	mainContainer.innerHTML = '<div class="homeArrowContainer">\
 									<img class="homeArrow" src="images/arrow-bottom.svg">\
 								</div>'
@@ -33,7 +37,7 @@ function openWeatherOrNot () {
 	//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotDesktopViewPresentation.png">'
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
-										'<h3 class="projectDetailOverview">Writen with pure vanilla javascript. A weather app uses your device/computers geolocation, and makes a request to Forecast.io with that cities (lat,lng) and any search parameters to show the user all detail weather information to their search.</h3>' +
+										'<h3 class="projectDetailOverview">Writen with pure vanilla javascript. A weather app that uses geolocation to make requests to Forecast.io with a cities (lat,lng) and any search parameters to show the user all detail weather information to their search.</h3>' +
 										 '<a href="http://ariquinones.github.io/weatherOrNot/" target="_blank"><span id="goto">Go to: </span><p class="githubProject" >Weather Or Not</p></a>' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)

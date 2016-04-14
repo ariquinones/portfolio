@@ -22,7 +22,11 @@ function openMyCompanionDxView () {
 	document.querySelector(".sidePathContainer").style.display = "initial"
 	}
 	document.querySelector(".sidePathContainer").style.display = "none"
-	mainContainer.style.top = "-48%"
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ 		mainContainer.style.top = "-35%"
+	} else {
+		mainContainer.style.top = "-48%"
+	}
 	mainContainer.innerHTML = '<div class="homeArrowContainer">\
 									<img class="homeArrow" src="images/arrow-bottom.svg">\
 								</div>'
@@ -40,8 +44,7 @@ function openMyCompanionDxView () {
 		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionDashboardView.png')"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
-										'<h3 class="projectDetailOverview">With ux research information we narrowed down the highest requirements for all physicians to use this application\
-										 without too much work on their part:\
+										'<h3 class="projectDetailOverview">\
 										Access all patient information & reports with one tool\
 										Give control to users on viewable data needed\
 										Track patient treatment regimen history and changes\
