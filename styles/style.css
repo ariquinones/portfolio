@@ -347,8 +347,8 @@ a:visited {
 /*	transform-style: preserve-3d;*/
 	}
 	.mainImageContainer {
-		width: 50%;
-		height: 40%;
+		width: 55%;
+		height: 50%;
 	}
 	.projectName {
 		font-size: 2.5em;
@@ -402,7 +402,6 @@ a:visited {
 	}
 	.projectDetailOverview {
 		font-size: 3em;
-
 	}
 	#goto {
 		font-size: 2em;

@@ -37,7 +37,7 @@ function openWeatherOrNot () {
 	//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotDesktopViewPresentation.png">'
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
-										'<h3 class="projectDetailOverview">Writen with pure vanilla javascript. A weather app that uses geolocation to make requests to Forecast.io with a cities (lat,lng) and any search parameters to show the user all detail weather information to their search.</h3>' +
+										'<h3 class="projectDetailOverview">A weather app that uses geolocation to make requests to Forecast.io with a cities (lat,lng) and any search parameters to show the user all detail weather information to their search.</h3>' +
 										 '<a href="http://ariquinones.github.io/weatherOrNot/" target="_blank"><span id="goto">Go to: </span><p class="githubProject" >Weather Or Not</p></a>' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)
@@ -59,10 +59,10 @@ function openWeatherOrNot () {
 		//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotIphoneViewPresentation.png">'
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
-										'<h3 class="projectDetailOverview">Demonstrate use of Promises and AJAX methods\
-												Demonstrate ability to update DOM elements and their attributes/innerHTML via JS\
-												Demonstrate an understanding of routing, and its role in "single page apps"\
-												Demonstrate understanding of the concepts of MVC, such as Backbone Models, Views and Routers</h3>' +
+										'<h3 class="projectDetailOverview">Demonstrating usage of Promises and AJAX methods\
+												with the ability to update DOM elements and their attributes/innerHTML via JS\
+												I demonstrate an understanding of routing, and its role in "single page apps"\
+												Using concepts of MVC, such as Backbone Models, Views and Routers</h3>' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
 		document.querySelector('.buttonRight').addEventListener('click', page4)
 		document.querySelector('.buttonLeft').addEventListener('click', page2)
