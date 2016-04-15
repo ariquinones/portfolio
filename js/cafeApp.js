@@ -23,7 +23,7 @@ function openBloggingLargeProject () {
 	}
 	document.querySelector(".sidePathContainer").style.display = "none"
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
- 		mainContainer.style.top = "-35%"
+ 		mainContainer.style.top = "-40%"
 	} else {
 		mainContainer.style.top = "-48%"
 	}
