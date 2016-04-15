@@ -23,8 +23,8 @@ function changeToHomePage () {
 									<img class="profilePicture" src="images/DesignProfilePic.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">Ari Quinones</h1>'+
-								'<h2 class="projectSummary">UI Developer</h2>'+
-								'<button class="links">View Projects</button>' +
+								'<h2 class="projectSummary">Designer/Developer</h2>'+
+								'<button class="links">Get Started</button>' +
 								'<div class="iconsContainer">\
 									<img id="aboutMePage" class="iconLink" src="images/aboutIcon.svg">\
 									<a href="https://github.com/ariquinones" target="_blank"><img class="iconLink" src="images/githubIcon.svg"></a>\
@@ -35,7 +35,7 @@ function changeToHomePage () {
 	document.querySelector('.mainImageContainer').addEventListener('click',changeToBloggingLargeView)
 }
 function changeToDoList () {
-	document.querySelector('.currentViewContainer').style.transform = "rotateX(-360deg)"
+	document.querySelector('.currentViewContainer').style.transform = "rotateX(360deg)"
 	document.querySelector(".currentView").textContent = "To Do List"
 	document.querySelector(".currentViewContainer").style.top = "77.5%"
 	mainContainer.style.transform = "translateX(-50%)"
@@ -59,7 +59,7 @@ function changeToDoList () {
 	document.querySelector("#previous").addEventListener('click',changeToWeatherApp)
 }
 function changeToWeatherApp () {
-	document.querySelector('.currentViewContainer').style.transform = "rotateX(360deg)"
+	document.querySelector('.currentViewContainer').style.transform = "rotateX(-360deg)"
 	mainContainer.style.transform += ' rotateY(180deg)'
 	function turn () {
 		mainContainer.style.transform += ' rotateY(180deg)'
@@ -84,7 +84,7 @@ function changeToWeatherApp () {
 }
 
 function changeToCdxProject () {
-	document.querySelector('.currentViewContainer').style.transform = "rotateX(-360deg)"
+	document.querySelector('.currentViewContainer').style.transform = "rotateX(360deg)"
 	mainContainer.style.transform += ' rotateY(180deg)'
 	function turn () {
 		mainContainer.style.transform += ' rotateY(180deg)'
@@ -121,7 +121,7 @@ function changeToBloggingLargeView () {
 	setTimeout(turn,600)
 	document.querySelector(".currentViewContainer").style.top = "18%"
 	document.querySelector(".currentView").textContent = "Blogging Large"
-	document.querySelector('.currentViewContainer').style.transform = "rotateX(360deg)"
+	document.querySelector('.currentViewContainer').style.transform = "rotateX(-360deg)"
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
 									<img class="profilePicture" src="images/bloggingLargeLoginScreenShot.png">' +
 								'</div>' +
