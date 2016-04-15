@@ -164,7 +164,7 @@ function openAboutMe () {
 		}
 	document.querySelector(".sidePathContainer").style.display = "none"
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
- 		mainContainer.style.top = "-40%"
+ 		mainContainer.style.top = "-45%"
 	} else {
 		mainContainer.style.top = "-48%"
 	}
