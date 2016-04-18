@@ -34,6 +34,30 @@ function changeToHomePage () {
 	document.querySelector(".links").addEventListener('click', changeToBloggingLargeView)
 	document.querySelector('.mainImageContainer').addEventListener('click',changeToBloggingLargeView)
 }
+function changeToFencing () {
+	document.querySelector('.currentViewContainer').style.transform = "rotateX(-360deg)"
+	document.querySelector(".currentView").textContent = "F&S Art"
+	document.querySelector(".currentViewContainer").style.top = "97%"
+	mainContainer.style.transform = "translateX(-50%)"
+	mainContainer.style.transform += ' rotateY(180deg)'
+	function turn () {
+		mainContainer.style.transform += ' rotateY(180deg)'
+	}
+	setTimeout(turn,600)
+	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
+									<img class="profilePicture" src="images/fencingAndSteelArt.png">' +
+								'</div>' +
+								'<h1 class="projectName">F&S Art </h1>'+
+								'<h2 class="projectSummary">Website Design</h2>'+
+								'<button class="links">View</button>' +
+								'<div class="navArrowsContainer">\
+									<img class="navigationArrow" id="previous" src="images/prevArrow.svg">\
+									<img class="navigationArrow" id="next" src="images/nextArrow.svg">\
+								</div>'
+	document.querySelector(".links").addEventListener('click', openFencing)
+	document.querySelector("#next").addEventListener('click',changeToHomePage)
+	document.querySelector("#previous").addEventListener('click',changeToDoList)
+}
 function changeToDoList () {
 	document.querySelector('.currentViewContainer').style.transform = "rotateX(360deg)"
 	document.querySelector(".currentView").textContent = "To Do List"
@@ -55,7 +79,7 @@ function changeToDoList () {
 									<img class="navigationArrow" id="next" src="images/nextArrow.svg">\
 								</div>'
 	document.querySelector(".links").addEventListener('click', openToDoList)
-	document.querySelector("#next").addEventListener('click',changeToHomePage)
+	document.querySelector("#next").addEventListener('click',changeToFencing)
 	document.querySelector("#previous").addEventListener('click',changeToWeatherApp)
 }
 function changeToWeatherApp () {
@@ -70,8 +94,8 @@ function changeToWeatherApp () {
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
 									<img class="profilePicture" src="images/weatherOrNot.png">' +
 								'</div>' +
-								'<h1 class="projectName">Weather Or Not App</h1>'+
-								'<h2 class="projectSummary">Weather App Development</h2>'+
+								'<h1 class="projectName">Weather Or Not</h1>'+
+								'<h2 class="projectSummary">Web App Development</h2>'+
 								'<button class="links">View</button>' +
 								'<div class="navArrowsContainer">\
 									<img class="navigationArrow" id="previous" src="images/prevArrow.svg">\
@@ -92,7 +116,7 @@ function changeToCdxProject () {
 	setTimeout(turn,600)
 	document.querySelector(".currentViewContainer").style.top = "37%"
 
-	document.querySelector(".currentView").textContent = "MyCompanionDx"
+	document.querySelector(".currentView").textContent = "MyCDx"
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
 									<img class="profilePicture" src="images/MyCompanionDx_ExecSumPage.png">' +
 								'</div>' +
@@ -125,8 +149,8 @@ function changeToBloggingLargeView () {
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
 									<img class="profilePicture" src="images/bloggingLargeLoginScreenShot.png">' +
 								'</div>' +
-								'<h1 class="projectName">Blogging Large Web App</h1>'+
-								'<h2 class="projectSummary">Blogging Platform App Development</h2>'+
+								'<h1 class="projectName">Blogging Large App</h1>'+
+								'<h2 class="projectSummary">Web App Development</h2>'+
 								'<button class="links">View</button>' +
 								'<div class="navArrowsContainer">\
 									<img class="navigationArrow" id="previous" src="images/prevArrow.svg">\
@@ -177,13 +201,23 @@ function openAboutMe () {
 	projectImagesContainer.innerHTML = 	'<div class="aboutMeContainer">\
 											<h1>ABOUT ME:</h1>' +
 											'<p>Ari C Quinones Vargas</p>' +
-											'<p>I love development and design.</p>\
+											'<p>I am a UI/UX designer with a passion for designing beautiful and functional user experiences.</p>\
+											<p>As well as a Front-End developer who focuses on writing clean, elegant and functional code.</p>\
+											<p>I love development and design.</p>\
 											<p>I mix my two passions together to create a more complete UI developer.</p>\
-											<p>I can do both well and love expressing my skills to anyone needing a creative mind on their team!</p>\
 											<h2>Education:</h2>\
 											<p>The University of Texas at San Antonio - B.B.A. in Marketing</p>\
 											<p>Ashworth College - Graphic Design</p>\
 											<p>The Iron Yard - Front-End Engineer</p>\
+											<h2>Skills:</h2>\
+											<ul class="aboutMeUl">\
+												<li>HTML</li>\
+												<li>CSS</li>\
+												<li>Javascript</li>\
+												<li>Photoshop</li>\
+												<li>Illustrator</li>\
+												<li>Sketch</li>\
+											</ul>\
 										</div>'
 	projectImagesContainer.style.width = "100%"							
 	projectDetailsContainer.style.display = 'none'
@@ -197,5 +231,6 @@ document.querySelector("#bloggingLarge").addEventListener('click',changeToBloggi
 document.querySelector("#myCompanionDx").addEventListener('click',changeToCdxProject)
 document.querySelector("#weatherOrNot").addEventListener('click',changeToWeatherApp)
 document.querySelector("#toDoList").addEventListener('click',changeToDoList)
+document.querySelector("#fencing").addEventListener('click',changeToFencing)
 document.querySelector('#aboutMePage').addEventListener('click',openAboutMe)
 

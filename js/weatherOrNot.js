@@ -33,12 +33,12 @@ function openWeatherOrNot () {
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 
 	document.querySelector(".projectDetailsContainer").style.background = "rgb(41,110,180)" 
-	projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotDesktopView.png')"
+	projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotDesktop.png')"
 	//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotDesktopViewPresentation.png">'
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
 										'<h3 class="projectDetailOverview">A weather app that uses geolocation to make requests to Forecast.io with a cities (lat, lng) and any search parameters to show the user all detail weather information to their search.</h3>' +
-										 '<a href="http://ariquinones.github.io/weatherOrNot/" target="_blank"><span id="goto">Go to: </span><p class="githubProject" >Weather Or Not</p></a>' +
+										 '<a href="http://ariquinones.github.io/weatherOrNot/" target="_blank"><span id="goto">Visit: </span><button class="githubProject" >Weather Or Not</button></a>' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
@@ -61,19 +61,18 @@ function openWeatherOrNot () {
 										'<h2 class="overview">Designs</h2>' +
 										'<h3 class="projectDetailOverview">Demonstrating usage of Promises and AJAX methods\
 												with the ability to update DOM elements and their attributes/innerHTML via JS.</h3> \
-										 <img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
-		document.querySelector('.buttonRight').addEventListener('click', page4)
+										 <img class="arrow buttonLeft" src="images/arrow-left.svg">'
 		document.querySelector('.buttonLeft').addEventListener('click', page2)
 	}
-	function page4 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIpadView2.png')"
-		//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/MyCompanionDx_ExecSumPage.png">'
-		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
-										'<h2 class="overview">Designs</h2>' +
-										'<h3 class="projectDetailOverview">I demonstrate an understanding of routing, and its role in "single page apps"\
-												Using concepts of MVC, such as Backbone Models, Views and Routers</h3>' +
-										 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
-		document.querySelector('.buttonLeft').addEventListener('click', page3)
-	}
+	// function page4 () {
+	// 	projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIpadView2.png')"
+	// 	//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/MyCompanionDx_ExecSumPage.png">'
+	// 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
+	// 									'<h2 class="overview">Designs</h2>' +
+	// 									'<h3 class="projectDetailOverview">I demonstrate an understanding of routing, and its role in "single page apps"\
+	// 											Using concepts of MVC, such as Backbone Models, Views and Routers</h3>' +
+	// 									 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
+	// 	document.querySelector('.buttonLeft').addEventListener('click', page3)
+	// }
 
 }

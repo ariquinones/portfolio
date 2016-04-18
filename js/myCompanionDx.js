@@ -54,17 +54,6 @@ function openMyCompanionDxView () {
 		document.querySelector('.buttonLeft').addEventListener('click', openMyCompanionDxView)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionMedView.png')"
-		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
-										'<h2 class="overview">Designs</h2>' +
-										'<h3 class="projectDetailOverview">In order to work rapidly & see all options we had for creating the application,\
-										 I sketched my designs on paper and as a team evaluated them to decide what route we would go.\
-										  This gave us a broader view on the system and we could highlight all areas where we could really innovate this app.</h3>' +
-										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
-		document.querySelector('.buttonRight').addEventListener('click', page4)
-		document.querySelector('.buttonLeft').addEventListener('click', page2)
-	}
-	function page4 () {
 		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionZoomInView.png')"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
@@ -72,7 +61,17 @@ function openMyCompanionDxView () {
 										 in utilizing pharmacogenomics in daily practice. Finding the right dose for the right patient\
 										  and the right time for a better medication treatment regimen.</h3>' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
-		document.querySelector('.buttonLeft').addEventListener('click', page3)
+		document.querySelector('.buttonLeft').addEventListener('click', page2)
 	}
+	// function page4 () {
+	// 	projectImagesContainer.style.backgroundImage = "url('./images/myCompanionZoomInView.png')"
+	// 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
+	// 									'<h2 class="overview">Designs</h2>' +
+	// 									'<h3 class="projectDetailOverview">MyCompanionDx web-based application is tool that assists healthcare professionals\
+	// 									 in utilizing pharmacogenomics in daily practice. Finding the right dose for the right patient\
+	// 									  and the right time for a better medication treatment regimen.</h3>' +
+	// 									 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
+	// 	document.querySelector('.buttonLeft').addEventListener('click', page3)
+	// }
 
 }

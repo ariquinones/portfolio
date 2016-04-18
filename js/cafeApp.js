@@ -38,36 +38,34 @@ function openBloggingLargeProject () {
 										'<h2 class="overview">Overview</h2>' +
 										'<h3 class="projectDetailOverview">An innovative blogging app\
 										 to connect users and share their thoughts in a user-frienly community.</h3>' +
-										 '<a  href="http://ariquinones.github.io/bloggingPlatformReact/#login" target="_blank"><span id="goto">Go to: </span><p class="githubProject">Blogging Large App</p></a>' +
+										 '<a  href="http://ariquinones.github.io/bloggingPlatformReact/#login" target="_blank"><span id="goto">Visit: </span><button class="githubProject">Blogging Large App</button></a>' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/bloggingLargeMultipleScreens.png')"
-		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
-										'<h2 class="overview">Concept</h2>' +
-										'<h3 class="projectDetailOverview">A user can sign up and start blogging with the option to view\
-										all other users blogs and their own.</h3>' +
-										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
-		document.querySelector('.buttonRight').addEventListener('click', page3)
-		document.querySelector('.buttonLeft').addEventListener('click', openBloggingLargeProject)
-	}
-	function page3 () {
 		projectImagesContainer.style.backgroundImage = "url('./images/bloggingLargeDesktopView.png')"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Backend</h2>' +
 										'<h3 class="projectDetailOverview">Using Firebase to maintain a database of users that are\
 										able to interact with each other.</h3>' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
-		document.querySelector('.buttonRight').addEventListener('click', page4)
-		document.querySelector('.buttonLeft').addEventListener('click', page2)
+		document.querySelector('.buttonRight').addEventListener('click', page3)
+		document.querySelector('.buttonLeft').addEventListener('click', openBloggingLargeProject)
 	}
-	function page4 () {
+	function page3 () {
 		projectImagesContainer.style.backgroundImage = "url('./images/bloggingLargeIpadView.png')"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 											'<h3 class="projectDetailOverview">User authentification to maintain user safety. Responsive and persistant databaase</h3>' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
-		document.querySelector('.buttonLeft').addEventListener('click', page3)
+		document.querySelector('.buttonLeft').addEventListener('click', page2)
 	}
+	// function page4 () {
+	// 	projectImagesContainer.style.backgroundImage = "url('./images/bloggingLargeIpadView.png')"
+	// 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
+	// 									'<h2 class="overview">Designs</h2>' +
+	// 										'<h3 class="projectDetailOverview">User authentification to maintain user safety. Responsive and persistant databaase</h3>' +
+	// 									 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
+	// 	document.querySelector('.buttonLeft').addEventListener('click', page3)
+	// }
 }
