@@ -144,12 +144,12 @@ function changeToBloggingLargeView () {
 	}
 	setTimeout(turn,600)
 	document.querySelector(".currentViewContainer").style.top = "18%"
-	document.querySelector(".currentView").textContent = "Blogging Large"
+	document.querySelector(".currentView").textContent = "Advanced Recovery"
 	document.querySelector('.currentViewContainer').style.transform = "rotateX(-360deg)"
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/bloggingLargeLoginScreenShot.png">' +
+									<img class="profilePicture" src="images/advancedRecovery.png">' +
 								'</div>' +
-								'<h1 class="projectName">Blogging Large App</h1>'+
+								'<h1 class="projectName">Advanced Recovery</h1>'+
 								'<h2 class="projectSummary">Web App Development</h2>'+
 								'<button class="links">View</button>' +
 								'<div class="navArrowsContainer">\

@@ -7,10 +7,10 @@ function openBloggingLargeProject () {
 		projectImagesContainer.style.background = "rgb(41,110,180)" 
 		projectDetailsContainer.style.background = "rgb(41,110,180)" 
 		mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/bloggingLargeLoginScreenShot.png">' +
+									<img class="profilePicture" src="images/advancedRecovery.png">' +
 								'</div>' +
-								'<h1 class="projectName">Blogging Large Web App</h1>'+
-								'<h2 class="projectSummary">Blogging Platform App Development</h2>'+
+								'<h1 class="projectName">Advanced Recovery</h1>'+
+								'<h2 class="projectSummary">Web App Development</h2>'+
 								'<button class="links">View</button>' +
 								'<div class="navArrowsContainer">\
 									<img class="navigationArrow" id="previous" src="images/prevArrow.svg">\
@@ -33,27 +33,29 @@ function openBloggingLargeProject () {
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 	document.querySelector(".projectDetailsContainer").style.background = 'rgb(41,110,180)' 
 	projectImagesContainer.style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.style.backgroundImage = "url('./images/bloggingLargeLoginScreen.png')"
+	projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryIphone.png')"
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
-										'<h3 class="projectDetailOverview">An innovative blogging app\
-										 to connect users and share their thoughts in a user-frienly community.</h3>' +
-										 '<a  href="http://ariquinones.github.io/bloggingPlatformReact/#login" target="_blank"><span id="goto">Visit: </span><button class="githubProject">Blogging Large App</button></a>' +
+										'<h3 class="projectDetailOverview">A physical therapy web app for better healthcare\
+										 communication between a patient and their physical therapist. Building an at home exercise\
+										  treatment regimen for a patient to better assist them in their recovery journey.</h3>' +
+										 '<a  href="http://ariquinones.github.io/pt4home/#splash" target="_blank"><span id="goto">Visit: </span><button class="githubProject">Advanced Recovery App</button></a>' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/bloggingLargeDesktopView.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryMacBook.png')"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
-										'<h2 class="overview">Backend</h2>' +
-										'<h3 class="projectDetailOverview">Using Firebase to maintain a database of users that are\
-										able to interact with each other.</h3>' +
+										'<h2 class="overview">Concept</h2>' +
+										'<h3 class="projectDetailOverview">Built on React.js a web based application \
+										which focuses on a niche market for a better patient journey experience in the\
+										 physical therapy industry that has not been there before.</h3>' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
 		document.querySelector('.buttonRight').addEventListener('click', page3)
 		document.querySelector('.buttonLeft').addEventListener('click', openBloggingLargeProject)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/bloggingLargeIpadView.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryIpad.png')"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 											'<h3 class="projectDetailOverview">User authentification to maintain user safety. Responsive and persistant databaase</h3>' +
