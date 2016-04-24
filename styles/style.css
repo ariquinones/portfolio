@@ -327,14 +327,15 @@ a:visited {
 	}
 	
 	.projectDescription {
-		font-size: 3em;
+		font-size: 2em;
 		margin: auto;
 	}
 	.overview {
 		margin: 1% auto;
+		font-size: 1.5em;
 	}
 	.projectDetailOverview {
-		font-size: 2.5em;
+		font-size: 1.25em;
 		margin: 2% auto;
 	}
 	#goto {
@@ -342,6 +343,7 @@ a:visited {
 	}
 	.githubProject {
 		font-size: 2em;
+		padding: 2%;
 	}
 }
 /* Iphone */
@@ -411,14 +413,15 @@ a:visited {
 	    background: rgb(41,110,180);
 	}
 	.projectDescription {
-		font-size: 4em;
+		font-size: 3.5em;
 		margin: auto;
 	}
 	.overview {
 		margin: 5% auto;
+		font-size: 3em;
 	}
 	.projectDetailOverview {
-		font-size: 3em;
+		font-size: 2.5em;
 	}
 	#goto {
 		font-size: 2em;

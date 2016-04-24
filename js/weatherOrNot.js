@@ -22,12 +22,14 @@ function openWeatherOrNot () {
 	document.querySelector(".sidePathContainer").style.display = "initial"
 	}
 	document.querySelector(".sidePathContainer").style.display = "none"
-		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		if( /Android|webOS|iPhone|iPod|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
  		mainContainer.style.top = "-45%"
+	} else if ( /iPad|BlackBerry/i.test(navigator.userAgent) )  {
+		mainContainer.style.top = "-35%"
 	} else {
 		mainContainer.style.top = "-48%"
 	}
-	mainContainer.innerHTML = '<div class="homeArrowContainer">\
+		mainContainer.innerHTML = '<div class="homeArrowContainer">\
 									<img class="homeArrow" src="images/arrow-bottom.svg">\
 								</div>'
 	document.querySelector(".homeArrow").addEventListener("click", backHome)

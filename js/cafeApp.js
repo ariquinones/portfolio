@@ -1,29 +1,31 @@
 function openBloggingLargeProject () {
 	console.log("bloggingLargeProjectView")
-	function backHome () {
-		mainContainer.style.top = "20%"
-		projectImagesContainer.innerHTML = ''
-		projectDetailsContainer.innerHTML = ''
-		projectImagesContainer.style.background = "rgb(41,110,180)" 
-		projectDetailsContainer.style.background = "rgb(41,110,180)" 
-		mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/advancedRecovery.png">' +
-								'</div>' +
-								'<h1 class="projectName">Advanced Recovery</h1>'+
-								'<h2 class="projectSummary">Web App Development</h2>'+
-								'<button class="links">View</button>' +
-								'<div class="navArrowsContainer">\
-									<img class="navigationArrow" id="previous" src="images/prevArrow.svg">\
-									<img class="navigationArrow" id="next" src="images/nextArrow.svg">\
-								</div>'
-	document.querySelector("#next").addEventListener('click',changeToCdxProject)
-	document.querySelector("#previous").addEventListener('click',changeToHomePage)
-	document.querySelector('.links').addEventListener('click', openBloggingLargeProject)
-	document.querySelector(".sidePathContainer").style.display = "initial"
-	}
+			function backHome () {
+				mainContainer.style.top = "20%"
+				projectImagesContainer.innerHTML = ''
+				projectDetailsContainer.innerHTML = ''
+				projectImagesContainer.style.background = "rgb(41,110,180)" 
+				projectDetailsContainer.style.background = "rgb(41,110,180)" 
+				mainContainer.innerHTML = 	'<div class="mainImageContainer">\
+											<img class="profilePicture" src="images/advancedRecovery.png">' +
+										'</div>' +
+										'<h1 class="projectName">Advanced Recovery</h1>'+
+										'<h2 class="projectSummary">Web App Development</h2>'+
+										'<button class="links">View</button>' +
+										'<div class="navArrowsContainer">\
+											<img class="navigationArrow" id="previous" src="images/prevArrow.svg">\
+											<img class="navigationArrow" id="next" src="images/nextArrow.svg">\
+										</div>'
+			document.querySelector("#next").addEventListener('click',changeToCdxProject)
+			document.querySelector("#previous").addEventListener('click',changeToHomePage)
+			document.querySelector('.links').addEventListener('click', openBloggingLargeProject)
+			document.querySelector(".sidePathContainer").style.display = "initial"
+			}
 	document.querySelector(".sidePathContainer").style.display = "none"
-		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		if( /Android|webOS|iPhone|iPod|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
  		mainContainer.style.top = "-45%"
+	} else if ( /iPad|BlackBerry/i.test(navigator.userAgent) )  {
+		mainContainer.style.top = "-35%"
 	} else {
 		mainContainer.style.top = "-48%"
 	}
