@@ -34,7 +34,9 @@ function openMyCompanionDxView () {
 								</div>'
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 	document.querySelector(".projectDetailsContainer").style.background = "rgb(41,110,180)"
-	projectImagesContainer.style.backgroundImage = "url('./images/MyCompanionDx_ExecSumPage2.png')"
+	projectImagesContainer.style.backgroundImage = "url('./images/MyCompanionDx_ExecSumPage.png')"
+	projectImagesContainer.style.backgroundPosition = "0%"
+	projectImagesContainer.style.backgroundSize = "cover"
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
 										'<h3 class="projectDetailOverview">An innovative pharmacogenomics and next-generation sequence app\
@@ -43,7 +45,8 @@ function openMyCompanionDxView () {
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionDashboardView.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionDashboardViewZ.png')"
+		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 										'<h3 class="projectDetailOverview">\
@@ -56,7 +59,9 @@ function openMyCompanionDxView () {
 		document.querySelector('.buttonLeft').addEventListener('click', openMyCompanionDxView)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionZoomInView.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionZoomInViewZ.png')"
+		projectImagesContainer.style.backgroundPosition = "center"
+		projectImagesContainer.style.backgroundRepeat = "no-repeat"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 										'<h3 class="projectDetailOverview">MyCompanionDx web-based application is tool that assists healthcare professionals\

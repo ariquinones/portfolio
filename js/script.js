@@ -137,7 +137,7 @@ function changeToBloggingLargeView () {
 	// var computedStyles = window.getComputedStyle(mainContainer)
 	// console.log(computedStyles)
 	// var oldTransform = computedStyles.transform
-	console.log("bloggingLargeView")
+	console.log("advancedRecoveryView")
 	mainContainer.style.transform += ' rotateY(180deg)'
 	function turn () {
 		mainContainer.style.transform += ' rotateY(180deg)'
@@ -165,7 +165,7 @@ function openAboutMe () {
 	console.log("about me")
 		function backHome () {
 			mainContainer.style.top = "20%"
-			projectImagesContainer.style.width = "50%"							
+			//projectImagesContainer.style.width = "50%"							
 			projectDetailsContainer.style.display = 'initial'
 			projectImagesContainer.innerHTML = ''
 			projectDetailsContainer.innerHTML = ''
@@ -175,8 +175,8 @@ function openAboutMe () {
 									<img class="profilePicture" src="images/DesignProfilePic.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">Ari Quinones</h1>'+
-								'<h2 class="projectSummary">UI Developer</h2>'+
-								'<button class="links">View Projects</button>' +
+								'<h2 class="projectSummary">Designer/Developer</h2>'+
+								'<button class="links">Get Started</button>' +
 								'<div class="iconsContainer">\
 									<img id="aboutMePage" class="iconLink" src="images/aboutIcon.svg">\
 									<a href="https://github.com/ariquinones" target="_blank"><img class="iconLink" src="images/githubIcon.svg"></a>\
@@ -187,11 +187,14 @@ function openAboutMe () {
 		document.querySelector(".sidePathContainer").style.display = "initial"
 		}
 	document.querySelector(".sidePathContainer").style.display = "none"
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	if( /Android|webOS|iPhone|iPod|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
  		mainContainer.style.top = "-45%"
+	} else if ( /iPad|BlackBerry/i.test(navigator.userAgent) )  {
+		mainContainer.style.top = "-35%"
 	} else {
 		mainContainer.style.top = "-48%"
 	}
+
 	mainContainer.innerHTML = '<div class="homeArrowContainer">\
 									<img class="homeArrow" src="images/arrow-bottom.svg">\
 								</div>'
@@ -219,8 +222,8 @@ function openAboutMe () {
 												<li>Sketch</li>\
 											</ul>\
 										</div>'
-	projectImagesContainer.style.width = "100%"							
-	projectDetailsContainer.style.display = 'none'
+	//projectImagesContainer.style.width = "100%"							
+	//projectDetailsContainer.style.display = 'none'
 }
 
 

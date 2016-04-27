@@ -9,8 +9,8 @@ function openToDoList () {
 		mainContainer.innerHTML = 	'<div class="mainImageContainer">\
 									<img class="profilePicture" src="images/toDoList.png">' +
 								'</div>' +
-								'<h1 class="projectName">Blogging Large Web App</h1>'+
-								'<h2 class="projectSummary">Blogging Platform App Development</h2>'+
+								'<h1 class="projectName">Smart To Do List</h1>'+
+								'<h2 class="projectSummary">Mobile App Development</h2>'+
 								'<button class="links">View</button>' +
 								'<div class="navArrowsContainer">\
 									<img class="navigationArrow" id="previous" src="images/prevArrow.svg">\
@@ -36,7 +36,8 @@ function openToDoList () {
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 	document.querySelector(".projectDetailsContainer").style.background = 'rgb(41,110,180)' 
 	projectImagesContainer.style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.style.backgroundImage = "url('./images/toDoListDesktopView.png')"
+	projectImagesContainer.style.backgroundImage = "url('./images/toDoListDesktopViewZ.png')"
+	projectImagesContainer.style.backgroundPosition = "center"
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
 										'<h3 class="projectDetailOverview">A helpful and easy to use to do list application for \
@@ -46,7 +47,8 @@ function openToDoList () {
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/toDoListIpadView.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/toDoListIpadViewZ.png')"
+		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Concept</h2>' +
 										'<h3 class="projectDetailOverview">Using React and Backbone for JSX components this list allows a user to add\
@@ -56,7 +58,8 @@ function openToDoList () {
 		document.querySelector('.buttonLeft').addEventListener('click', openToDoList)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/toDoListIphoneView.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/toDoListIphoneViewZ.png')"
+		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 										'<h3 class="projectDetailOverview">Simple UI design with the user in mind for the best possible experience.</h3>' +

@@ -36,7 +36,8 @@ function openFencing () {
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 	document.querySelector(".projectDetailsContainer").style.background = 'rgb(41,110,180)' 
 	projectImagesContainer.style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtDesktop.png')"
+	projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtDesktopZ.png')"
+	projectImagesContainer.style.backgroundPosition = "center"
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Website Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
 										'<h3 class="projectDetailOverview">The Fencing and Steel Art website</h3>' +
@@ -45,7 +46,8 @@ function openFencing () {
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtIpad.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtIpadZ.png')"
+		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Website Design</h1>' +
 										'<h2 class="overview">Concept</h2>' +
 										'<h3 class="projectDetailOverview">Build this website for Fencing and Steel Art company to showcase their work and acquire new customers</h3>' +
@@ -54,7 +56,8 @@ function openFencing () {
 		document.querySelector('.buttonLeft').addEventListener('click', openFencing)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtIpadLaydown.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtIpadLaydownZ.png')"
+		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Website Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 										'<h3 class="projectDetailOverview">A simple user experience to view the best Fencing & Steel Art projects and be able to get a free estimate at any moment.</h3>' +

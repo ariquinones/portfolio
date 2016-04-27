@@ -35,7 +35,8 @@ function openBloggingLargeProject () {
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 	document.querySelector(".projectDetailsContainer").style.background = 'rgb(41,110,180)' 
 	projectImagesContainer.style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryIphone.png')"
+	projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryIphoneZ.png')"
+	projectImagesContainer.style.backgroundPosition = "center"
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
 										'<h3 class="projectDetailOverview">A physical therapy web app for better healthcare\
@@ -46,7 +47,8 @@ function openBloggingLargeProject () {
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryMacBook.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryMacBookZ.png')"
+		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Concept</h2>' +
 										'<h3 class="projectDetailOverview">Built on React.js a web based application \
@@ -57,7 +59,8 @@ function openBloggingLargeProject () {
 		document.querySelector('.buttonLeft').addEventListener('click', openBloggingLargeProject)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryIpad.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryIpadZ.png')"
+		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 											'<h3 class="projectDetailOverview">User authentification to maintain user safety. Responsive and persistant databaase</h3>' +

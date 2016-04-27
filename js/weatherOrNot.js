@@ -35,7 +35,8 @@ function openWeatherOrNot () {
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 
 	document.querySelector(".projectDetailsContainer").style.background = "rgb(41,110,180)" 
-	projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotDesktop.png')"
+	projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotDesktopViewZ.png')"
+	projectImagesContainer.style.backgroundPosition = "center"
 	//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotDesktopViewPresentation.png">'
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
@@ -45,7 +46,8 @@ function openWeatherOrNot () {
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIpadView.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIpadViewZ.png')"
+		projectImagesContainer.style.backgroundPosition = "center"
 		//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotIpadViewPresentation.png">'
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
@@ -57,7 +59,8 @@ function openWeatherOrNot () {
 		document.querySelector('.buttonLeft').addEventListener('click', openWeatherOrNot)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIphoneView.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIphoneViewZ.png')"
+		projectImagesContainer.style.backgroundPosition = "center"
 		//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotIphoneViewPresentation.png">'
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
