@@ -315,11 +315,8 @@ a:visited {
 	.iconsContainer {
 		margin: 6% auto;
 	}
-	.sideMenuItem {
-		margin-bottom: 9000%;
-	}
 	.emailContainer {
-		width: 6000%;
+		width: 5em;
 	}
 	.projectImagesContainer {
 		width: 100%;
@@ -416,13 +413,9 @@ a:visited {
 	.iconsContainer {
 		margin: 6% auto;
 	}
-	.sideMenuItem {
-		margin-bottom: 12300%;
-	}
 	.emailContainer {
-		width: 6000%;
+		width: 5em;
 	}
-
 	.projectImagesContainer {
 		width: 100%;
 		height: 40vh;
