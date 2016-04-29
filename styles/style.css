@@ -188,19 +188,37 @@ a:visited {
 }
 
 .sideMenuItem {
-  	margin-bottom: 4400%;
-    margin-top: -1000%;
-    margin-left: -375%;
+  	position: absolute;
+    margin-left: -300%;
     background: white;
-    width: 15px;
-    height: 15px;
+    width: 1em;
+    height: 1em;
     border-radius: 50%;
     border: none;
 }
+#home {
+	top: 0;
+}
+#bloggingLarge {
+	top: 20%;
+}
+#myCompanionDx {
+	top: 39%;
+}
+#weatherOrNot {
+	top: 58%;
+}
+#toDoList {
+	top: 79%;
+}
+#fencing {
+	top: 99%;
+}
+
 .sideMenuItem:hover {
 	cursor: pointer;
-	width: 20px;
-	height: 20px;
+	width: 2em;
+	height: 2em;
 }
 .currentViewContainer {
 	width: 10em;
