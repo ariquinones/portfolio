@@ -63,7 +63,7 @@ function openBloggingLargeProject () {
 		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
-											'<h3 class="projectDetailOverview">User authentification to maintain user safety. Responsive and persistant databaase</h3>' +
+											'<h3 class="projectDetailOverview">User authentification to maintain user safety. Responsive and persistant database</h3>' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
 		document.querySelector('.buttonLeft').addEventListener('click', page2)
 	}

@@ -40,7 +40,7 @@ function openMyCompanionDxView () {
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
 										'<h3 class="projectDetailOverview">An innovative pharmacogenomics and next-generation sequence app\
-										 to help physicians view details in patient reports.</h3>' +
+										 to help physicians view details an all patient reports.</h3>' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
@@ -50,10 +50,10 @@ function openMyCompanionDxView () {
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 										'<h3 class="projectDetailOverview">\
-										Access all patient information & reports with one tool\
-										Give control to users on viewable data needed\
-										Track patient treatment regimen history and changes\
-										Notify physicians on changes needed to regimen & schedule report reads from CompanionDx experts</h3>' +
+										Access all patient information & reports with one tool. \
+										Give control to users on viewable data needed. \
+										Track patient treatment regimen history and changes and \
+										notify physicians on changes needed to regimen & schedule report reads from CompanionDx experts.</h3>' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
 		document.querySelector('.buttonRight').addEventListener('click', page3)
 		document.querySelector('.buttonLeft').addEventListener('click', openMyCompanionDxView)
@@ -64,9 +64,9 @@ function openMyCompanionDxView () {
 		projectImagesContainer.style.backgroundRepeat = "no-repeat"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
-										'<h3 class="projectDetailOverview">MyCompanionDx web-based application is tool that assists healthcare professionals\
+										'<h3 class="projectDetailOverview">MyCompanionDx web-based application is a tool that assists healthcare professionals\
 										 in utilizing pharmacogenomics in daily practice. Finding the right dose for the right patient\
-										  and the right time for a better medication treatment regimen.</h3>' +
+										  at the right time for a better medication treatment regimen.</h3>' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
 		document.querySelector('.buttonLeft').addEventListener('click', page2)
 	}

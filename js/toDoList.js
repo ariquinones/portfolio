@@ -41,7 +41,7 @@ function openToDoList () {
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
 										'<h3 class="projectDetailOverview">A helpful and easy to use to do list application for \
-										your daily use.</h3>' +
+										daily use.</h3>' +
 										 '<a  href="http://ariquinones.github.io/yourToDos/" target="_blank"><span id="goto">Visit: </span><button class="githubProject">Your To Dos List</button></a>' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)
@@ -51,7 +51,7 @@ function openToDoList () {
 		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Concept</h2>' +
-										'<h3 class="projectDetailOverview">Using React and Backbone for JSX components this list allows a user to add\
+										'<h3 class="projectDetailOverview">Using React and Backbone for JSX components, this list allows a user to add\
 										list items and toggle between what has been done and not done.</h3>' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
 		document.querySelector('.buttonRight').addEventListener('click', page3)

@@ -40,7 +40,7 @@ function openWeatherOrNot () {
 	//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotDesktopViewPresentation.png">'
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
-										'<h3 class="projectDetailOverview">A weather app that uses geolocation to make requests to Forecast.io with a cities (lat, lng) and any search parameters to show the user all detail weather information to their search.</h3>' +
+										'<h3 class="projectDetailOverview">A weather app that uses geolocation to make requests to Forecast.io with a cities (lat, lng) and any search parameters to show the user all detail weather information for their destination.</h3>' +
 										 '<a href="http://ariquinones.github.io/weatherOrNot/" target="_blank"><span id="goto">Visit: </span><button class="githubProject" >Weather Or Not</button></a>' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)
@@ -65,7 +65,7 @@ function openWeatherOrNot () {
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 										'<h3 class="projectDetailOverview">Demonstrating usage of Promises and AJAX methods\
-												with the ability to update DOM elements and their attributes/innerHTML via JS.</h3> \
+												with the ability to update DOM elements and their attributes via JS.</h3> \
 										 <img class="arrow buttonLeft" src="images/arrow-left.svg">'
 		document.querySelector('.buttonLeft').addEventListener('click', page2)
 	}

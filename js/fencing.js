@@ -50,7 +50,7 @@ function openFencing () {
 		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Website Design</h1>' +
 										'<h2 class="overview">Concept</h2>' +
-										'<h3 class="projectDetailOverview">Build this website for Fencing and Steel Art company to showcase their work and acquire new customers</h3>' +
+										'<h3 class="projectDetailOverview">Built this website for Fencing and Steel Art company to better market their business and acquire new customers</h3>' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
 		document.querySelector('.buttonRight').addEventListener('click', page3)
 		document.querySelector('.buttonLeft').addEventListener('click', openFencing)
