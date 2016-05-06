@@ -214,11 +214,9 @@ a:visited {
 #fencing {
 	top: 99%;
 }
-
 .sideMenuItem:hover {
 	cursor: pointer;
-	width: 2em;
-	height: 2em;
+	background: rgb(88,176,236);
 }
 .currentViewContainer {
 	width: 10em;
@@ -319,9 +317,9 @@ a:visited {
 		width: 5em;
 	}
 	.sideMenuItem {
-	    width: 1.5em;
-    	height: 1.5em;
+	    width: 1em;
 	}
+
 	.projectImagesContainer {
 		width: 100%;
 		height: 50vh;
@@ -415,14 +413,19 @@ a:visited {
 		width: 13%;
 	}
 	.iconsContainer {
-		margin: 6% auto;
+		margin: 8% auto;
+	}
+	.navArrowsContainer {
+		margin: 8% auto;
 	}
 	.emailContainer {
 		width: 5em;
 	}
 	.sideMenuItem {
-	    width: 1.5em;
-    	height: 1.5em;
+	    width: 1em;
+	}
+	.currentViewContainer {
+		width: 8em;
 	}
 	.projectImagesContainer {
 		width: 100%;

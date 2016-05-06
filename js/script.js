@@ -144,7 +144,7 @@ function changeToBloggingLargeView () {
 	}
 	setTimeout(turn,600)
 	document.querySelector(".currentViewContainer").style.top = "18%"
-	document.querySelector(".currentView").textContent = "Advanced Recovery"
+	document.querySelector(".currentView").textContent = "Ad. Recovery"
 	document.querySelector('.currentViewContainer').style.transform = "rotateX(-360deg)"
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
 									<img class="profilePicture" src="images/advancedRecovery.png">' +
