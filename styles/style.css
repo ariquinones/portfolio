@@ -318,6 +318,7 @@ a:visited {
 	}
 	.sideMenuItem {
 	    width: 1em;
+	    height: 1em;
 	}
 
 	.projectImagesContainer {
@@ -423,6 +424,7 @@ a:visited {
 	}
 	.sideMenuItem {
 	    width: 1em;
+	    height: 1em;
 	}
 	.currentViewContainer {
 		width: 8em;
