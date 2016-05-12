@@ -7,7 +7,7 @@ function openWeatherOrNot () {
 		projectImagesContainer.style.background = "rgb(41,110,180)" 
 		projectDetailsContainer.style.background = "rgb(41,110,180)" 
 		mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/weatherOrNot.png">' +
+									<img class="profilePicture" src="images/weatherOrNot.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">Weather Or Not App</h1>'+
 								'<h2 class="projectSummary">Weather App Development</h2>'+
@@ -35,9 +35,9 @@ function openWeatherOrNot () {
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 
 	document.querySelector(".projectDetailsContainer").style.background = "rgb(41,110,180)" 
-	projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotDesktopViewZ.png')"
+	projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotDesktopViewZ.jpg')"
 	projectImagesContainer.style.backgroundPosition = "center"
-	//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotDesktopViewPresentation.png">'
+	//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotDesktopViewPresentation.jpg">'
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
 										'<h3 class="projectDetailOverview">A weather app that uses geolocation to make requests to Forecast.io with a cities (lat, lng) and any search parameters to show the user all detail weather information for their destination.</h3>' +
@@ -46,9 +46,9 @@ function openWeatherOrNot () {
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIpadViewZ.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIpadViewZ.jpg')"
 		projectImagesContainer.style.backgroundPosition = "center"
-		//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotIpadViewPresentation.png">'
+		//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotIpadViewPresentation.jpg">'
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 										'<h3 class="projectDetailOverview">App objectives: Demonstrate understanding of functions, loops/array, variadic behavior. \
@@ -59,9 +59,9 @@ function openWeatherOrNot () {
 		document.querySelector('.buttonLeft').addEventListener('click', openWeatherOrNot)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIphoneViewZ.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIphoneViewZ.jpg')"
 		projectImagesContainer.style.backgroundPosition = "center"
-		//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotIphoneViewPresentation.png">'
+		//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotIphoneViewPresentation.jpg">'
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 										'<h3 class="projectDetailOverview">Demonstrating usage of Promises and AJAX methods\
@@ -70,7 +70,7 @@ function openWeatherOrNot () {
 		document.querySelector('.buttonLeft').addEventListener('click', page2)
 	}
 	// function page4 () {
-	// 	projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIpadView2.png')"
+	// 	projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIpadView2.jpg')"
 	// 	//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/MyCompanionDx_ExecSumPage.png">'
 	// 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 	// 									'<h2 class="overview">Designs</h2>' +

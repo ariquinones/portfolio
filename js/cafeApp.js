@@ -7,7 +7,7 @@ function openBloggingLargeProject () {
 				projectImagesContainer.style.background = "rgb(41,110,180)" 
 				projectDetailsContainer.style.background = "rgb(41,110,180)" 
 				mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-											<img class="profilePicture" src="images/advancedRecovery.png">' +
+											<img class="profilePicture" src="images/advancedRecovery.jpg">' +
 										'</div>' +
 										'<h1 class="projectName">Advanced Recovery</h1>'+
 										'<h2 class="projectSummary">Web App Development</h2>'+
@@ -35,7 +35,7 @@ function openBloggingLargeProject () {
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 	document.querySelector(".projectDetailsContainer").style.background = 'rgb(41,110,180)' 
 	projectImagesContainer.style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryIphoneZ.png')"
+	projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryIphoneZ.jpg')"
 	projectImagesContainer.style.backgroundPosition = "center"
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
@@ -47,7 +47,7 @@ function openBloggingLargeProject () {
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryMacBookZ.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryMacBookZ.jpg')"
 		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Concept</h2>' +
@@ -59,8 +59,9 @@ function openBloggingLargeProject () {
 		document.querySelector('.buttonLeft').addEventListener('click', openBloggingLargeProject)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryIpadZ.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryIpadZ.jpg')"
 		projectImagesContainer.style.backgroundPosition = "center"
+		projectImagesContainer.style.backgroundRepeat = "no-repeat"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 											'<h3 class="projectDetailOverview">User authentification to maintain user safety. Responsive and persistant database</h3>' +

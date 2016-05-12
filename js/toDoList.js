@@ -7,7 +7,7 @@ function openToDoList () {
 		projectImagesContainer.style.background = "rgb(41,110,180)" 
 		projectDetailsContainer.style.background = "rgb(41,110,180)" 
 		mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/toDoList.png">' +
+									<img class="profilePicture" src="images/toDoList.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">Smart To Do List</h1>'+
 								'<h2 class="projectSummary">Mobile App Development</h2>'+
@@ -36,7 +36,7 @@ function openToDoList () {
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 	document.querySelector(".projectDetailsContainer").style.background = 'rgb(41,110,180)' 
 	projectImagesContainer.style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.style.backgroundImage = "url('./images/toDoListDesktopViewZ.png')"
+	projectImagesContainer.style.backgroundImage = "url('./images/toDoListDesktopViewZ.jpg')"
 	projectImagesContainer.style.backgroundPosition = "center"
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
@@ -47,7 +47,7 @@ function openToDoList () {
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/toDoListIpadViewZ.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/toDoListIpadViewZ.jpg')"
 		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Concept</h2>' +
@@ -58,7 +58,7 @@ function openToDoList () {
 		document.querySelector('.buttonLeft').addEventListener('click', openToDoList)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/toDoListIphoneViewZ.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/toDoListIphoneViewZ.jpg')"
 		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +

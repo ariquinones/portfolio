@@ -7,7 +7,7 @@ function openFencing () {
 		projectImagesContainer.style.background = "rgb(41,110,180)" 
 		projectDetailsContainer.style.background = "rgb(41,110,180)" 
 		mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/fencingAndSteelArt.png">' +
+									<img class="profilePicture" src="images/fencingAndSteelArt.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">F&S Art </h1>'+
 								'<h2 class="projectSummary">Website Design</h2>'+
@@ -36,7 +36,7 @@ function openFencing () {
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 	document.querySelector(".projectDetailsContainer").style.background = 'rgb(41,110,180)' 
 	projectImagesContainer.style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtDesktopZ.png')"
+	projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtDesktopZ.jpg')"
 	projectImagesContainer.style.backgroundPosition = "center"
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Website Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
@@ -46,7 +46,7 @@ function openFencing () {
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtIpadZ.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtIpadZ.jpg')"
 		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Website Design</h1>' +
 										'<h2 class="overview">Concept</h2>' +
@@ -56,7 +56,7 @@ function openFencing () {
 		document.querySelector('.buttonLeft').addEventListener('click', openFencing)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtIpadLaydownZ.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtIpadLaydownZ.jpg')"
 		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Website Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +

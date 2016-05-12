@@ -45,7 +45,7 @@ function changeToFencing () {
 	}
 	setTimeout(turn,600)
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/fencingAndSteelArt.png">' +
+									<img class="profilePicture" src="images/fencingAndSteelArt.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">F&S Art </h1>'+
 								'<h2 class="projectSummary">Website Design</h2>'+
@@ -69,7 +69,7 @@ function changeToDoList () {
 	}
 	setTimeout(turn,600)
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/toDoList.png">' +
+									<img class="profilePicture" src="images/toDoList.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">Smart To Do List</h1>'+
 								'<h2 class="projectSummary">Mobile App Development</h2>'+
@@ -92,7 +92,7 @@ function changeToWeatherApp () {
 	document.querySelector(".currentViewContainer").style.top = "56.5%"
 	document.querySelector(".currentView").textContent = "Weather Or Not"
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/weatherOrNot.png">' +
+									<img class="profilePicture" src="images/weatherOrNot.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">Weather Or Not</h1>'+
 								'<h2 class="projectSummary">Web App Development</h2>'+
@@ -118,7 +118,7 @@ function changeToCdxProject () {
 
 	document.querySelector(".currentView").textContent = "MyCDx"
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/MyCompanionDx_ExecSumPage.png">' +
+									<img class="profilePicture" src="images/MyCompanionDx_ExecSumPage.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">MyCompanionDx</h1>'+
 								'<h2 class="projectSummary">Web App Design</h2>'+
@@ -147,7 +147,7 @@ function changeToBloggingLargeView () {
 	document.querySelector(".currentView").textContent = "Ad. Recovery"
 	document.querySelector('.currentViewContainer').style.transform = "rotateX(-360deg)"
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/advancedRecovery.png">' +
+									<img class="profilePicture" src="images/advancedRecovery.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">Advanced Recovery</h1>'+
 								'<h2 class="projectSummary">Web App Development</h2>'+

@@ -7,7 +7,7 @@ function openMyCompanionDxView () {
 		projectImagesContainer.style.background = "rgb(41,110,180)" 
 		projectDetailsContainer.style.background = "rgb(41,110,180)" 
 		mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/MyCompanionDx_ExecSumPage.png">' +
+									<img class="profilePicture" src="images/MyCompanionDx_ExecSumPage.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">MyCompanionDx</h1>'+
 								'<h2 class="projectSummary">Web App Design</h2>'+
@@ -34,7 +34,7 @@ function openMyCompanionDxView () {
 								</div>'
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 	document.querySelector(".projectDetailsContainer").style.background = "rgb(41,110,180)"
-	projectImagesContainer.style.backgroundImage = "url('./images/MyCompanionDx_ExecSumPage.png')"
+	projectImagesContainer.style.backgroundImage = "url('./images/MyCompanionDx_ExecSumPage.jpg')"
 	projectImagesContainer.style.backgroundPosition = "0%"
 	projectImagesContainer.style.backgroundSize = "cover"
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
@@ -45,7 +45,7 @@ function openMyCompanionDxView () {
 	document.querySelector('.buttonRight').addEventListener('click', page2)
 	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionDashboardViewZ.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionDashboardViewZ.jpg')"
 		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
@@ -59,7 +59,7 @@ function openMyCompanionDxView () {
 		document.querySelector('.buttonLeft').addEventListener('click', openMyCompanionDxView)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionZoomInViewZ.png')"
+		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionZoomInViewZ.jpg')"
 		projectImagesContainer.style.backgroundPosition = "center"
 		projectImagesContainer.style.backgroundRepeat = "no-repeat"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
