@@ -7,15 +7,15 @@ function openWeatherOrNot () {
 		projectImagesContainer.style.background = "rgb(41,110,180)" 
 		projectDetailsContainer.style.background = "rgb(41,110,180)" 
 		mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/weatherOrNot.jpg">' +
-								'</div>' +
-								'<h1 class="projectName">Weather Or Not App</h1>'+
-								'<h2 class="projectSummary">Weather App Development</h2>'+
-								'<button class="links">View</button>' +
-								'<div class="navArrowsContainer">\
-									<img class="navigationArrow" id="previous" src="images/prevArrow.svg">\
-									<img class="navigationArrow" id="next" src="images/nextArrow.svg">\
-								</div>'
+													<img class="profilePicture" src="images/advancedRecovery.jpg">' +
+												'</div>' +
+												'<h1 class="projectName">Advanced Recovery</h1>'+
+												'<h2 class="projectSummary">Web App Development</h2>'+
+												'<button class="links">View</button>' +
+												'<div class="navArrowsContainer">\
+													<img class="navigationArrow" id="previous" src="images/prevArrow.svg">\
+													<img class="navigationArrow" id="next" src="images/nextArrow.svg">\
+												</div>'
 	document.querySelector("#next").addEventListener('click',changeToDoList)
 	document.querySelector("#previous").addEventListener('click',changeToCdxProject)
 	document.querySelector('.links').addEventListener('click', openWeatherOrNot)
@@ -35,49 +35,36 @@ function openWeatherOrNot () {
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 
 	document.querySelector(".projectDetailsContainer").style.background = "rgb(41,110,180)" 
-	projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotDesktopViewZ.jpg')"
-	projectImagesContainer.style.backgroundPosition = "center"
-	//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotDesktopViewPresentation.jpg">'
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
-										'<h3 class="projectDetailOverview">A weather app that uses geolocation to make requests to Forecast.io with a cities (lat, lng) and any search parameters to show the user all detail weather information for their destination.</h3>' +
-										 '<a href="http://ariquinones.github.io/weatherOrNot/" target="_blank"><span id="goto">Visit: </span><button class="githubProject" >Weather Or Not</button></a>' +
+										'<h3 class="projectDetailOverview">A physical therapy web app for better healthcare\
+										 communication between a patient and their physical therapist. Building an at home exercise\
+										  treatment regimen for a patient to better assist them in their recovery journey.</h3>' +
+										  '<img class="imageContainerDesktopLook" src="images/advancedRecoveryMac.jpg">' +
+										 '<a  href="http://ariquinones.github.io/pt4home/#splash" target="_blank"><span id="goto">Visit: </span><button class="githubProject">Advanced Recovery App</button></a>' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)
-	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
+	
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIpadViewZ.jpg')"
-		projectImagesContainer.style.backgroundPosition = "center"
-		//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotIpadViewPresentation.jpg">'
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
-										'<h2 class="overview">Designs</h2>' +
-										'<h3 class="projectDetailOverview">App objectives: Demonstrate understanding of functions, loops/array, variadic behavior. \
-											Be able to breakdown a simple process of mathematical steps into a series of statements in JS \
-											and demonstrate Functional Programming methods</h3>' +
+										'<h2 class="overview">Concept</h2>' +
+										'<h3 class="projectDetailOverview">Built on React.js a web based application \
+										which focuses on a niche market for a better patient journey experience in the\
+										 physical therapy industry that has not been there before.</h3>' +
+										 '<img class="imageContainerMobileView" src="images/advancedRecoveryIpad.jpg">' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
 		document.querySelector('.buttonRight').addEventListener('click', page3)
 		document.querySelector('.buttonLeft').addEventListener('click', openWeatherOrNot)
 	}
+
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIphoneViewZ.jpg')"
-		projectImagesContainer.style.backgroundPosition = "center"
-		//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/weatherOrNotIphoneViewPresentation.jpg">'
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
-										'<h3 class="projectDetailOverview">Demonstrating usage of Promises and AJAX methods\
-												with the ability to update DOM elements and their attributes via JS.</h3> \
-										 <img class="arrow buttonLeft" src="images/arrow-left.svg">'
+											'<h3 class="projectDetailOverview">User authentification to maintain user safety. Responsive and persistant database</h3>' +
+										 '<img class="imageContainerMobileView" src="images/advancedRecoveryMobile.jpg">' +
+										 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
+		
 		document.querySelector('.buttonLeft').addEventListener('click', page2)
 	}
-	// function page4 () {
-	// 	projectImagesContainer.style.backgroundImage = "url('./images/weatherOrNotIpadView2.jpg')"
-	// 	//projectImagesContainer.innerHTML = '<img class="projectImage" src="images/MyCompanionDx_ExecSumPage.png">'
-	// 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
-	// 									'<h2 class="overview">Designs</h2>' +
-	// 									'<h3 class="projectDetailOverview">I demonstrate an understanding of routing, and its role in "single page apps"\
-	// 											Using concepts of MVC, such as Backbone Models, Views and Routers</h3>' +
-	// 									 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
-	// 	document.querySelector('.buttonLeft').addEventListener('click', page3)
-	// }
 
 }

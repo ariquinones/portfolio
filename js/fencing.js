@@ -35,40 +35,30 @@ function openFencing () {
 								</div>'
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 	document.querySelector(".projectDetailsContainer").style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtDesktopZ.jpg')"
-	projectImagesContainer.style.backgroundPosition = "center"
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Website Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
 										'<h3 class="projectDetailOverview">The Fencing and Steel Art website</h3>' +
+										 '<img class="imageContainerDesktopLook" src="images/fencingDesktop.jpg">' +
 										 '<a  href="http://fencingandsteelart.com/" target="_blank"><span id="goto">Visit: </span><button class="githubProject">Fencing & Steel Art</button></a>' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)
-	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
+	
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtIpadZ.jpg')"
-		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Website Design</h1>' +
 										'<h2 class="overview">Concept</h2>' +
 										'<h3 class="projectDetailOverview">Built this website for Fencing and Steel Art company to better market their business and acquire new customers</h3>' +
+										  '<img class="imageContainerMobileView" src="images/fencingMobile.jpg">' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
 		document.querySelector('.buttonRight').addEventListener('click', page3)
 		document.querySelector('.buttonLeft').addEventListener('click', openFencing)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/fencingAndSteelArtIpadLaydownZ.jpg')"
-		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Website Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 										'<h3 class="projectDetailOverview">A simple user experience to view the best Fencing & Steel Art projects and be able to get a free estimate at any moment.</h3>' +
+										 '<img class="imageContainerMobileView" src="images/fencingMobileTwo.jpg">' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
 		document.querySelector('.buttonLeft').addEventListener('click', page2)
 	}
-	// function page4 () {
-	// 	projectImagesContainer.style.backgroundImage = "url('./images/toDoListIpadView.png')"
-	// 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
-	// 									'<h2 class="overview">Designs</h2>' +
-	// 									 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
-	// 	document.querySelector('.buttonLeft').addEventListener('click', page3)
-	// }
+	
 }

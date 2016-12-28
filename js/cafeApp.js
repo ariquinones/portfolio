@@ -7,9 +7,9 @@ function openBloggingLargeProject () {
 				projectImagesContainer.style.background = "rgb(41,110,180)" 
 				projectDetailsContainer.style.background = "rgb(41,110,180)" 
 				mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-											<img class="profilePicture" src="images/advancedRecovery.jpg">' +
+											<img class="profilePicture" src="images/gamerWall.jpg">' +
 										'</div>' +
-										'<h1 class="projectName">Advanced Recovery</h1>'+
+										'<h1 class="projectName">GamerWall</h1>'+
 										'<h2 class="projectSummary">Web App Development</h2>'+
 										'<button class="links">View</button>' +
 										'<div class="navArrowsContainer">\
@@ -34,46 +34,30 @@ function openBloggingLargeProject () {
 								</div>'
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 	document.querySelector(".projectDetailsContainer").style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryIphoneZ.jpg')"
-	projectImagesContainer.style.backgroundPosition = "center"
-	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
+	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Web App</h1>' +
 										'<h2 class="overview">Overview</h2>' +
-										'<h3 class="projectDetailOverview">A physical therapy web app for better healthcare\
-										 communication between a patient and their physical therapist. Building an at home exercise\
-										  treatment regimen for a patient to better assist them in their recovery journey.</h3>' +
-										 '<a  href="http://ariquinones.github.io/pt4home/#splash" target="_blank"><span id="goto">Visit: </span><button class="githubProject">Advanced Recovery App</button></a>' +
+										'<p class="projectDetailOverview">GamerWall is an eSports gaming platform that allows players to "Put Their Money Where Their Mouth Is". We provide a secure network for gamers to gather and compete for cash. If you crave competition and think you can take on the best, you come to the GamerWall. We feature head to head matches of your favorite eSports games. Put your skills to the test and become the best gamer around!</p>' +
+										 '<img class="imageContainerDesktopLook" src="images/gamerWallNew.jpg">' +
+										 '<a href="http://thegamerwall.com/" target="_blank"><span id="goto">Visit: </span><button class="githubProject">GamerWall</button></a>' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)
-	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
+	
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryMacBookZ.jpg')"
-		projectImagesContainer.style.backgroundPosition = "center"
-		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
-										'<h2 class="overview">Concept</h2>' +
-										'<h3 class="projectDetailOverview">Built on React.js a web based application \
-										which focuses on a niche market for a better patient journey experience in the\
-										 physical therapy industry that has not been there before.</h3>' +
-										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
+		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Web App</h1>' +
+										'<h2 class="overview">From design to development</h2>' +
+										'<p class="projectDetailOverview">Built on the Zend Framework, I was the UI/UX developer for the application. Using latest front-end technologies, I took the UI designs and coded every bit of the front-end.</p>' +
+										'<img class="imageContainerDesktopLook" src="images/gamerWallCreateMatch.jpg">' +
+										'<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
 		document.querySelector('.buttonRight').addEventListener('click', page3)
 		document.querySelector('.buttonLeft').addEventListener('click', openBloggingLargeProject)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/advancedRecoveryIpadZ.jpg')"
-		projectImagesContainer.style.backgroundPosition = "center"
-		projectImagesContainer.style.backgroundRepeat = "no-repeat"
-		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
-										'<h2 class="overview">Designs</h2>' +
-											'<h3 class="projectDetailOverview">User authentification to maintain user safety. Responsive and persistant database</h3>' +
+		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">Web App</h1>' +
+										'<h2 class="overview">Mobile First</h2>' +
+										'<p class="projectDetailOverview">Learned how the php/zend framework works along with relational databases and Sql programming</p>' +
+										'<img class="imageContainerMobileView" src="images/gamerWallMobile.jpg">' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
+		
 		document.querySelector('.buttonLeft').addEventListener('click', page2)
 	}
-	// function page4 () {
-	// 	projectImagesContainer.style.backgroundImage = "url('./images/bloggingLargeIpadView.png')"
-	// 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
-	// 									'<h2 class="overview">Designs</h2>' +
-	// 										'<h3 class="projectDetailOverview">User authentification to maintain user safety. Responsive and persistant databaase</h3>' +
-	// 									 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
-	// 	document.querySelector('.buttonLeft').addEventListener('click', page3)
-	// }
 }

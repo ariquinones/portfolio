@@ -10,7 +10,7 @@ function openMyCompanionDxView () {
 									<img class="profilePicture" src="images/MyCompanionDx_ExecSumPage.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">MyCompanionDx</h1>'+
-								'<h2 class="projectSummary">Web App Design</h2>'+
+								'<h2 class="projectSummary">UI/UX Design</h2>'+
 								'<button class="links">View</button>' +
 								'<div class="navArrowsContainer">\
 									<img class="navigationArrow" id="previous" src="images/prevArrow.svg">\
@@ -34,19 +34,15 @@ function openMyCompanionDxView () {
 								</div>'
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
 	document.querySelector(".projectDetailsContainer").style.background = "rgb(41,110,180)"
-	projectImagesContainer.style.backgroundImage = "url('./images/MyCompanionDx_ExecSumPage.jpg')"
-	projectImagesContainer.style.backgroundPosition = "0%"
-	projectImagesContainer.style.backgroundSize = "cover"
 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Overview</h2>' +
 										'<h3 class="projectDetailOverview">An innovative pharmacogenomics and next-generation sequence app\
 										 to help physicians view details an all patient reports.</h3>' +
+										 '<img class="imageContainerDesktopLook" src="images/myCdxDesktop.jpg">' +
 										 '<img class="arrow buttonRight" src="images/arrow-right.svg">'
 	document.querySelector('.buttonRight').addEventListener('click', page2)
-	// document.querySelector('.buttonLeft').addEventListener('click', prevPage)
+
 	function page2 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionDashboardViewZ.jpg')"
-		projectImagesContainer.style.backgroundPosition = "center"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 										'<h3 class="projectDetailOverview">\
@@ -54,31 +50,20 @@ function openMyCompanionDxView () {
 										Give control to users on viewable data needed. \
 										Track patient treatment regimen history and changes and \
 										notify physicians on changes needed to regimen & schedule report reads from CompanionDx experts.</h3>' +
-										 '<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
+										'<img class="imageContainerDesktopLookTilt" src="images/myCdxDesktopTilt.png">' +
+										'<img class="arrow buttonLeft" src="images/arrow-left.svg"><img class="arrow buttonRight" src="images/arrow-right.svg">'
 		document.querySelector('.buttonRight').addEventListener('click', page3)
 		document.querySelector('.buttonLeft').addEventListener('click', openMyCompanionDxView)
 	}
 	function page3 () {
-		projectImagesContainer.style.backgroundImage = "url('./images/myCompanionZoomInViewZ.jpg')"
-		projectImagesContainer.style.backgroundPosition = "center"
-		projectImagesContainer.style.backgroundRepeat = "no-repeat"
 		projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
 										'<h2 class="overview">Designs</h2>' +
 										'<h3 class="projectDetailOverview">MyCompanionDx web-based application is a tool that assists healthcare professionals\
 										 in utilizing pharmacogenomics in daily practice. Finding the right dose for the right patient\
 										  at the right time for a better medication treatment regimen.</h3>' +
+										 '<img class="imageContainerDesktopLook" src="images/myCdxDesktopDetails.jpg">' +
 										 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
 		document.querySelector('.buttonLeft').addEventListener('click', page2)
 	}
-	// function page4 () {
-	// 	projectImagesContainer.style.backgroundImage = "url('./images/myCompanionZoomInView.png')"
-	// 	projectDetailsContainer.innerHTML = '<h1 class="projectDescription">App Design</h1>' +
-	// 									'<h2 class="overview">Designs</h2>' +
-	// 									'<h3 class="projectDetailOverview">MyCompanionDx web-based application is tool that assists healthcare professionals\
-	// 									 in utilizing pharmacogenomics in daily practice. Finding the right dose for the right patient\
-	// 									  and the right time for a better medication treatment regimen.</h3>' +
-	// 									 '<img class="arrow buttonLeft" src="images/arrow-left.svg">'
-	// 	document.querySelector('.buttonLeft').addEventListener('click', page3)
-	// }
 
 }

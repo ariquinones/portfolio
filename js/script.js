@@ -34,6 +34,7 @@ function changeToHomePage () {
 	document.querySelector(".links").addEventListener('click', changeToBloggingLargeView)
 	document.querySelector('.mainImageContainer').addEventListener('click',changeToBloggingLargeView)
 }
+
 function changeToFencing () {
 	document.querySelector('.currentViewContainer').style.transform = "rotateX(-360deg)"
 	document.querySelector(".currentView").textContent = "F&S Art"
@@ -58,6 +59,7 @@ function changeToFencing () {
 	document.querySelector("#next").addEventListener('click',changeToHomePage)
 	document.querySelector("#previous").addEventListener('click',changeToDoList)
 }
+
 function changeToDoList () {
 	document.querySelector('.currentViewContainer').style.transform = "rotateX(360deg)"
 	document.querySelector(".currentView").textContent = "To Do List"
@@ -71,8 +73,8 @@ function changeToDoList () {
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
 									<img class="profilePicture" src="images/toDoList.jpg">' +
 								'</div>' +
-								'<h1 class="projectName">Smart To Do List</h1>'+
-								'<h2 class="projectSummary">Mobile App Development</h2>'+
+								'<h1 class="projectName">Smart Task List</h1>'+
+								'<h2 class="projectSummary">App Development</h2>'+
 								'<button class="links">View</button>' +
 								'<div class="navArrowsContainer">\
 									<img class="navigationArrow" id="previous" src="images/prevArrow.svg">\
@@ -82,6 +84,7 @@ function changeToDoList () {
 	document.querySelector("#next").addEventListener('click',changeToFencing)
 	document.querySelector("#previous").addEventListener('click',changeToWeatherApp)
 }
+
 function changeToWeatherApp () {
 	document.querySelector('.currentViewContainer').style.transform = "rotateX(-360deg)"
 	mainContainer.style.transform += ' rotateY(180deg)'
@@ -90,11 +93,11 @@ function changeToWeatherApp () {
 	}
 	setTimeout(turn,600)
 	document.querySelector(".currentViewContainer").style.top = "56.5%"
-	document.querySelector(".currentView").textContent = "Weather Or Not"
+	document.querySelector(".currentView").textContent = "Ad. Recovery"
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/weatherOrNot.jpg">' +
+									<img class="profilePicture" src="images/advancedRecovery.jpg">' +
 								'</div>' +
-								'<h1 class="projectName">Weather Or Not</h1>'+
+								'<h1 class="projectName">Advanced Recovery</h1>'+
 								'<h2 class="projectSummary">Web App Development</h2>'+
 								'<button class="links">View</button>' +
 								'<div class="navArrowsContainer">\
@@ -121,7 +124,7 @@ function changeToCdxProject () {
 									<img class="profilePicture" src="images/MyCompanionDx_ExecSumPage.jpg">' +
 								'</div>' +
 								'<h1 class="projectName">MyCompanionDx</h1>'+
-								'<h2 class="projectSummary">Web App Design</h2>'+
+								'<h2 class="projectSummary">UI/UX Design</h2>'+
 								'<button class="links">View</button>' +
 								'<div class="navArrowsContainer">\
 									<img class="navigationArrow" id="previous" src="images/prevArrow.svg">\
@@ -134,9 +137,6 @@ function changeToCdxProject () {
 }
 
 function changeToBloggingLargeView () {
-	// var computedStyles = window.getComputedStyle(mainContainer)
-	// console.log(computedStyles)
-	// var oldTransform = computedStyles.transform
 	console.log("advancedRecoveryView")
 	mainContainer.style.transform += ' rotateY(180deg)'
 	function turn () {
@@ -144,12 +144,13 @@ function changeToBloggingLargeView () {
 	}
 	setTimeout(turn,600)
 	document.querySelector(".currentViewContainer").style.top = "18%"
-	document.querySelector(".currentView").textContent = "Ad. Recovery"
+	
 	document.querySelector('.currentViewContainer').style.transform = "rotateX(-360deg)"
+	document.querySelector(".currentView").textContent = "GamerWall"
 	mainContainer.innerHTML = 	'<div class="mainImageContainer">\
-									<img class="profilePicture" src="images/advancedRecovery.jpg">' +
+									<img class="profilePicture" src="images/gamerWall.jpg">' +
 								'</div>' +
-								'<h1 class="projectName">Advanced Recovery</h1>'+
+								'<h1 class="projectName">GamerWall</h1>'+
 								'<h2 class="projectSummary">Web App Development</h2>'+
 								'<button class="links">View</button>' +
 								'<div class="navArrowsContainer">\
@@ -165,8 +166,6 @@ function openAboutMe () {
 	console.log("about me")
 		function backHome () {
 			mainContainer.style.top = "20%"
-			//projectImagesContainer.style.width = "50%"							
-			projectDetailsContainer.style.display = 'initial'
 			projectImagesContainer.innerHTML = ''
 			projectDetailsContainer.innerHTML = ''
 			projectImagesContainer.style.background = "rgb(41,110,180)" 
@@ -199,31 +198,32 @@ function openAboutMe () {
 									<img class="homeArrow" src="images/arrow-bottom.svg">\
 								</div>'
 	document.querySelector(".homeArrow").addEventListener("click", backHome)
-	//document.querySelector(".projectDetailsContainer").style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.style.background = 'rgb(41,110,180)' 
-	projectImagesContainer.innerHTML = 	'<div class="aboutMeContainer">\
+	projectDetailsContainer.style.background = 'rgb(41,110,180)' 
+	projectDetailsContainer.innerHTML = '<div class="aboutMeContainer">\
 											<h1>ABOUT ME:</h1>' +
 											'<p>Ari C Quinones Vargas</p>' +
-											'<p>I am a UI/UX designer with a passion for designing beautiful and functional user experiences.</p>\
-											<p>As well as a Front-End developer who focuses on writing clean, elegant and functional code.</p>\
+											'<p>I am a Front-End Developer with a passion for UI/UX design. I love designing beautiful and elegant user interfaces.</p>\
+											<p>I focus on writing clean, elegant and functional code.</p>\
 											<p>I love development and design.</p>\
-											<p>I mix my two passions together to create a more complete UI developer.</p>\
+											<p>I mix my two passions together to create a more complete Developer.</p>\
 											<h2>Education:</h2>\
 											<p>The University of Texas at San Antonio - B.B.A. in Marketing</p>\
 											<p>Ashworth College - Graphic Design</p>\
 											<p>The Iron Yard - Front-End Engineer</p>\
 											<h2>Skills:</h2>\
 											<ul class="aboutMeUl">\
-												<li>HTML</li>\
-												<li>CSS</li>\
-												<li>Javascript</li>\
+												<li>Html/Html5</li>\
+												<li>Css/Sass/Bootstrap</li>\
+												<li>NodeJs/Express</li>\
+												<li>React</li>\
+												<li>Jquery</li>\
+												<li>Php/Zend2</li>\
+												<li>Sql/MySql</li>\
 												<li>Photoshop</li>\
 												<li>Illustrator</li>\
 												<li>Sketch</li>\
 											</ul>\
 										</div>'
-	//projectImagesContainer.style.width = "100%"							
-	//projectDetailsContainer.style.display = 'none'
 }
 
 
