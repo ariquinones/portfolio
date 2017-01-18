@@ -23,11 +23,11 @@ function openToDoList () {
 	}
 	document.querySelector(".sidePathContainer").style.display = "none"
 		if( /Android|webOS|iPhone|iPod|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
- 		mainContainer.style.top = "-45%"
+ 		mainContainer.style.top = "-370px"
 	} else if ( /iPad|BlackBerry/i.test(navigator.userAgent) )  {
-		mainContainer.style.top = "-35%"
+		mainContainer.style.top = "-370px"
 	} else {
-		mainContainer.style.top = "-48%"
+		mainContainer.style.top = "-370px"
 	}
 
 	mainContainer.innerHTML = '<div class="homeArrowContainer">\

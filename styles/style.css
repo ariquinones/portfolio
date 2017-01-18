@@ -45,7 +45,7 @@ a:visited {
 	background: white;
 	border: 1px solid rgb(88,176,236);
 	box-shadow: 5px 5px 15px;
-	position: absolute;
+	position: fixed;
 	top: 20%;
 	left: 50%;
 	text-align: center;
@@ -319,8 +319,6 @@ a:visited {
 	left: 50%;
 	text-align: center;
 	transition: 1s all ease;
-/*	-webkit-transform: translateX(-50%);*/
-/*	transform-style: preserve-3d;*/
 	}
 	.projectName {
 		font-size: 2em;
@@ -410,8 +408,6 @@ a:visited {
 	left: 50%;
 	text-align: center;
 	transition: 1s all ease;
-/*	-webkit-transform: translateX(-50%);*/
-/*	transform-style: preserve-3d;*/
 	}
 	.mainImageContainer {
 		width: 50%;
@@ -496,5 +492,50 @@ a:visited {
 		font-size: 1.5em;
 	}
 
+}
+
+
+@media(max-width:768px) {
+			body {
+				background: rgb(41,110,180);
+			}
+			.iconsContainer {
+				margin: 2% auto;
+			}
+			.emailContainer {
+				right: -15px;
+			}
+			.currentViewContainer {
+				background: transparent;
+			}
+			.currentView {
+				display: none;
+			}
+			.imageContainerDesktopLook {
+				max-width: 95%;
+				max-height: 100%;
+				margin: 5% auto;
+			}
+			.imageContainerMobileView {
+				max-width: 90%;
+				max-height: 60%;
+				margin: 5% auto;
+			}
+			.projectDescription {
+				margin: 7% auto;
+			}
+			.projectDetailOverview {
+				width: 90%;
+			}
+			.githubProject {
+				font-size: 1.25em;
+			}
+			.aboutMeContainer {
+			    margin-top: 10%;
+			}
+			.aboutMeContainer > h2 {
+				font-size: 2em;
+				margin: 2% auto;
+			}
 }
 
