@@ -309,8 +309,8 @@ a:visited {
 		background: rgb(41,110,180);
 	}
 	.mainContainer {
-	width: 40%;
-    height: 40%;
+	width: 600px;
+    height: 800px;
 	background: white;
 	border: 1px solid rgb(88,176,236);
 	box-shadow: 5px 5px 15px;
@@ -391,6 +391,12 @@ a:visited {
 	.aboutMeContainer > .aboutMeUl {
 		font-size: 1.5em;
 	}
+	.currentViewContainer {
+				background: transparent;
+			}
+			.currentView {
+				display: none;
+			}
 }
 /* Iphone */
 @media screen and (max-device-width: 480px) {
@@ -398,8 +404,8 @@ a:visited {
 		background: rgb(41,110,180);
 	}
 	.mainContainer {
-	width: 55%;
-    height: 50%;
+	width: 600px;
+    height: 800px;
 	background: white;
 	border: 1px solid rgb(88,176,236);
 	box-shadow: 5px 5px 15px;
@@ -491,6 +497,12 @@ a:visited {
 	.aboutMeContainer > .aboutMeUl {
 		font-size: 1.5em;
 	}
+	.currentViewContainer {
+				background: transparent;
+			}
+			.currentView {
+				display: none;
+			}
 
 }
 

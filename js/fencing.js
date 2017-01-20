@@ -23,9 +23,9 @@ function openFencing () {
 	}
 	document.querySelector(".sidePathContainer").style.display = "none"
 		if( /Android|webOS|iPhone|iPod|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
- 		mainContainer.style.top = "-370px"
+ 		mainContainer.style.top = "-740px"
 	} else if ( /iPad|BlackBerry/i.test(navigator.userAgent) )  {
-		mainContainer.style.top = "-370px"
+		mainContainer.style.top = "-740px"
 	} else {
 		mainContainer.style.top = "-370px"
 	}
